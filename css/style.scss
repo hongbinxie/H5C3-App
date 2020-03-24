@@ -51,10 +51,33 @@ header {
 }
 /*header end*/
 
+/*main start*/
 section {
 	flex: 1;
-	background: #fff;
+	overflow: hidden;
+	position: relative;
+	>div {
+		background: pink;
+	}
 }
+.home {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	& a {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		& img {
+			width: 8rem;
+			height: auto;
+			margin-top: .4rem;
+		}
+	}
+}
+/*main start*/
+
 footer {
 	width: 100%;
 	height: 1.3333333rem;
