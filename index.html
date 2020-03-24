@@ -15,7 +15,8 @@
 			<span class="header-right"></span>
 		</header>
 		<section>
-			<div class="home">
+			<!-- home start -->
+			<div class="home" id='home'>
 				<div>
 					<a href="">
 						<img src="img/pic1.png" alt="">
@@ -37,22 +38,34 @@
 					</a>	
 				</div>			
 			</div>
+			<!-- home end -->
+
+			<div id='favorite'>
+				收藏
+			</div>
+			<div id='history'>	
+				历史记录
+			</div>
+			<div id='config'>
+				设置
+			</div>
+
 		</section>
 		<footer>
 			<nav>
-				<a href="">
+				<a href="#home">
 					<span>首页</span>
 					<p>home</p>
 				</a>
-				<a href="">
+				<a href="#favorite">
 					<span>收藏</span>
 					<p>favorite</p>
 				</a>
-				<a href="">
+				<a href="#history">
 					<span>历史记录</span>
 					<p>history</p>
 				</a>
-				<a href="">
+				<a href="#config">
 					<span>设置</span>
 					<p>config</p>
 				</a>
@@ -62,13 +75,9 @@
 	</div>
 
 	<script src='js/iscroll.js'></script>
-	<script>
-		new IScroll('.home',{
-			click: true,
-			scrollbars: true,
-			fadeScrollbars:true,
-			bounce: false
-		});	
-	</script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/touch.js"></script>
+	<script src='js/fx.js'></script>
+	<script src='js/index.js'></script>
 </body>
 </html>
