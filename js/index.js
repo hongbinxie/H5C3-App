@@ -40,12 +40,15 @@ tabEvent();
 
 //return icon start
 function into(that){
+	var title = that.attr("title");
 	var href = that.attr("href");
 
 	if(href=='#list'){
+		$(".header-title").html(title)
 		$("#return").show();
 		$("#return").attr("href",'#home');
 	}else if(href=='#home'){
+		$(".header-title").html("孕育宝典")
 		$("#return").hide();
 	}
 }

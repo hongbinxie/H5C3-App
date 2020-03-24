@@ -78,6 +78,18 @@ section {
       height: auto;
       margin-top: .4rem; }
 
+.list {
+  display: flex;
+  flex-direction: column; }
+  .list a {
+    display: flex;
+    border-bottom: 1px dashed #000;
+    padding: 20px 10px; }
+    .list a p {
+      font-size: 16px;
+      line-height: 76px;
+      margin-left: 30px; }
+
 /*content start*/
 /*footer start*/
 footer {
