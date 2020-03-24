@@ -51,7 +51,7 @@ header {
 }
 /*header end*/
 
-/*main start*/
+/*content start*/
 section {
 	flex: 1;
 	overflow: hidden;
@@ -76,10 +76,36 @@ section {
 		}
 	}
 }
-/*main start*/
+/*content start*/
 
+/*footer start*/
 footer {
+	position: relative;
 	width: 100%;
 	height: 1.3333333rem;
-	background: #900;
+	background: #000;
+	display: flex;
+	align-items: center;
+	nav {
+		width: 100%;
+		display: flex;
+		a {
+			z-index: 2;
+			flex: 1;
+			font-size: .4rem;
+			color: #fff;
+			text-align: center;
+		}
+	}
+	mark{
+		position: absolute;
+		left:0;
+		top:0;
+		width: 25%;
+		height: 1.3333333rem;
+		background: #000;
+		z-index: 1;
+		box-shadow: 0 .05rem .21rem #fff;
+	}
 }
+/*footer end*/
