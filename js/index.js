@@ -1,6 +1,5 @@
 // home-iscroll start
 new IScroll('.home',{
-	click: true,
 	scrollbars: true,
 	fadeScrollbars:true,
 	bounce: false
@@ -13,7 +12,7 @@ function tabEvent(){
 	$(".container").on("touchend",'a',function(e){
 		e.preventDefault();
 
-		var that = $(this).attr("href")
+		var that = $(this).attr("href");
 
 		$(that).css({
 			"transition":"all .5s",
@@ -32,7 +31,22 @@ function tabEvent(){
 
 			})
 		}
+
+		into($(this));
 	})
 }
 tabEvent();
 // tabbar end
+
+//return icon start
+function into(that){
+	var href = that.attr("href");
+
+	if(href=='#list'){
+		$("#return").show();
+		$("#return").attr("href",'#home');
+	}else if(href=='#home'){
+		$("#return").hide();
+	}
+}
+//return icon end

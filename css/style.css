@@ -25,6 +25,8 @@ header {
   display: flex;
   align-items: center; }
   header .header-left {
+    z-index: 2;
+    position: relative;
     margin-left: .5rem;
     width: .8rem;
     height: .8rem;
@@ -32,6 +34,9 @@ header {
     background-size: 100% auto;
     display: none; }
   header .header-title {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
     flex: 1;
     font-size: .5333333rem;
     color: #fff;
