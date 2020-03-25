@@ -9,6 +9,11 @@ ul {
 a {
 	text-decoration: none;
 }
+.hidden{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
 /*reset end*/
 
 .container {
@@ -39,11 +44,14 @@ header {
 	.header-title {
 		z-index: 1;
 		position: absolute;
-		width: 100%;
+		width: 7.4rem;
+		left: 50%;
+		margin-left: -3.7rem;
 		flex: 1;
 		font-size: .5333333rem;
 		color: #fff;
-		text-align: center;
+		text-align: center;	
+		.hidden;
 	}
 	.header-right {
 		position: absolute;
@@ -105,8 +113,16 @@ section {
 			font-size:16px;
 			line-height: 76px;
 			margin-left:30px;
+			.hidden;			
 		}
 	}
+}
+
+.article-content {
+	padding: 20px;
+	color: #000;
+	font-size: .48rem;
+	line-height: .8rem;	
 }
 /*content start*/
 
