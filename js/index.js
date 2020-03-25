@@ -33,7 +33,7 @@ function tabEvent(){
 		}
 	})
 
-	$(".container").on("touchend",'a',function(e){
+	$(".container").on("click",'a',function(e){
 		e.preventDefault();
 
 		var that = $(this).attr("href");
@@ -65,7 +65,7 @@ function tabEvent(){
 		}
 	})
 
-	$(".header-right").tap(function(){
+	$(".header-right").click(function(){
 
 		var strTitle = $(this).attr('title');		
 		var favArr = JSON.parse(ls.getItem("favNames"))
