@@ -2,7 +2,7 @@
 new IScroll('.home',{
 	scrollbars: true,
 	fadeScrollbars:true,
-	bounce: false
+	//bounce: false
 });	
 // home-iscroll end
 
